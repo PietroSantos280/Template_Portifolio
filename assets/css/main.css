@@ -11,6 +11,35 @@
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Fonts */
+/* Aplique esta classe ao elemento que contém o link */
+.texto-com-link-longo {
+  overflow-wrap: break-word;
+  word-break: break-all; /* Força a quebra em qualquer ponto */
+}
+
+.skill-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+
+}
+
+.skill-card {
+  width: 220px; /* ajusta conforme seu layout */
+  min-height: 220px; /* deixa todos com o mesmo tamanho mínimo */
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+
+}
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Questrial",  sans-serif;
@@ -433,7 +462,7 @@ h6 {
   }
 
   .mobile-nav-active .mobile-nav-toggle {
-    color: #fff;
+    color: #000000;
     position: absolute;
     font-size: 32px;
     top: 15px;
@@ -446,7 +475,7 @@ h6 {
     position: fixed;
     overflow: hidden;
     inset: 0;
-    background: rgba(33, 37, 41, 0.8);
+    background: #f5f5f5;
     transition: 0.3s;
   }
 
@@ -966,6 +995,7 @@ section,
 .skills .skill-box {
   background-color: var(--surface-color);
   padding: 2rem;
+  height: 370px;
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
 }
